@@ -27,16 +27,16 @@ namespace TicTacToe
                 Board();
                 choice = int.Parse(Console.ReadLine());
                 
-                if (arr[choice] != 'X' && arr[choice] != "O")
+                if (arr[choice] != 'X' && arr[choice] != 'O')
                 {
                     if (playerTurn % 2 == 0) 
                     {
-                        arr[choice] = "O";
+                        arr[choice] = 'O';
                         playerTurn++;
                     }
                     else
                     {
-                        arr[choice] = "X";
+                        arr[choice] = 'X';
                         playerTurn++;
                     }
                 }
